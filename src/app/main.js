@@ -1,7 +1,9 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-const router = require("./routes/news.route");
+const userRouter = require("./routes/news.route");
+const countryRouter = require("./routes/country.route");
+const categoryRouter = require("./routes/category.route");
 
 // Handling CORS
 app.use((req, res, next) => {
@@ -13,6 +15,8 @@ app.use((req, res, next) => {
 
 app.use(bodyParser.json());
 
-app.use(router);
+app.use(userRouter);
+app.use(countryRouter);
+app.use(categoryRouter);
 
 module.exports = app;

@@ -39,18 +39,18 @@ module.exports.allNewsValidation = {
   q: {
     in: ["params", "query"],
   },
-  toDate: {
-    in: ["params", "query"],
-    isDate: {
-      errorMessage: "Not a valid date",
-    },
-  },
-  fromDate: {
-    in: ["params", "query"],
-    isDate: {
-      errorMessage: "Not a valid date",
-    },
-  },
+  // toDate: {
+  //   in: ["params", "query"],
+  //   isDate: {
+  //     errorMessage: "Not a valid date",
+  //   },
+  // },
+  // fromDate: {
+  //   in: ["params", "query"],
+  //   isDate: {
+  //     errorMessage: "Not a valid date",
+  //   },
+  // },
   sortBy: {
     in: ["params", "query"],
     custom: {
